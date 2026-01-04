@@ -1,0 +1,512 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body, p {
+            font-family: "Raleway", "Helvetica Neue", Arial, Verdana;
+            font-size: 16px;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 19px;
+            font-weight: 400;
+            text-transform: none;
+            color: #818181;
+        }
+
+        .navbar-fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            background: black;
+            opacity: 0.95;
+            height: 64px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-wrapper {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .brand-logo {
+            font-weight: 600;
+            font-size: 30px;
+            color: black;
+            position: absolute;
+            left: 20px;
+        }
+
+        .brand-logo img {
+            height: 25px;
+        }
+
+        .table-of-contents {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .table-of-contents a {
+            color: #f6f6f6;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.75s;
+        }
+
+        .table-of-contents > li > a.active,
+        .table-of-contents > li > a:hover {
+            font-weight: 300;
+            color: #03a9f4;
+        }
+
+        .button-collapse {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 0;
+            position: absolute;
+            right: 20px;
+        }
+
+        .menuicon {
+            width: 34.048px;
+            height: 25.6px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .side-nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background: white;
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+            z-index: 999;
+            overflow-y: auto;
+        }
+
+        .side-nav.active {
+            transform: translateX(0);
+        }
+
+        .side-nav > div {
+            height: 150px;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side-nav > div img {
+            height: 100px;
+            margin-top: 25px;
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .side-nav ul li {
+            padding: 0;
+            margin: 0;
+        }
+
+        .side-nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            padding: 15px 20px;
+        }
+
+        .scrollspy {
+            padding-top: 80px;
+        }
+
+        #home {
+            background-color: black;
+            padding: 60px 20px;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        
+        
+        #home > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+        .header-logo {
+            width: 100%;
+            max-width: 584px;
+            margin-bottom: 30px;
+        }
+
+        .white-text {
+            color: #f6f6f6;
+        }
+
+        .light {
+            font-weight: 300;
+        }
+
+        .light-blue-text {
+            color: #03a9f4;
+        }
+
+        .container {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .no-pad-bot {
+            padding-bottom: 0;
+        }
+
+        .no-pad-top {
+            padding-top: 0;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 400;
+            color: #333;
+        }
+
+        h1 {
+            line-height: 60%;
+            text-transform: none;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 200%;
+        }
+
+        h5 {
+            font-size: 120%;
+            text-transform: uppercase;
+            line-height: 110%;
+        }
+
+        h6 {
+            font-size: 120%;
+            margin-top: 24px;
+        }
+
+        .h7 {
+            font-size: 110%;
+            line-height: 100%;
+        }
+
+        hr.light {
+            border: 0;
+            height: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 30px 0;
+        }
+
+        em {
+            text-transform: uppercase;
+            font-style: normal;
+            font-size: 85%;
+            font-weight: 600;
+        }
+
+        .page-title {
+            font-weight: 400;
+        }
+
+        .page-header-lg {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-title-block {
+            text-align: center;
+        }
+
+        .icollapsible {
+            cursor: pointer;
+            color: #03a9f4;
+            font-weight: 500;
+        }
+
+        .icontent {
+            display: none;
+        }
+
+        .icontent-active {
+            display: block;
+        }
+
+        #news {
+            background-color: floralwhite;
+        }
+
+        #research {
+            background-color: floralwhite;
+        }
+
+        #news ul, #publications ul {
+            list-style-type: disc;
+            margin-left: 1.3em;
+        }
+
+        #news li, #publications li {
+            margin-left: 1.3em;
+            margin-bottom: 16px;
+        }
+
+        #research ol {
+            margin-left: 1.5em;
+            padding-left: 0;
+        }
+
+        #research li {
+            font-size: 130%;
+            line-height: 110%;
+            color: #000;
+        }
+
+        #research li > h6 {
+            font-size: 100%;
+        }
+
+        .row {
+            margin-bottom: 8px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col.s12 {
+            width: 100%;
+            display: block;
+        }
+
+        .col.m3 {
+            width: 25%;
+            display: block;
+        }
+
+        .journal-papers {
+            margin-bottom: 40px;
+        }
+
+        .journal-papers-meta {
+            margin-bottom: 20px;
+        }
+
+        .journal-papers-meta p {
+            margin-bottom: 8px;
+        }
+
+        .pdf-link, .github-link {
+            display: inline-block;
+            margin-right: 20px;
+            color: #03a9f4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .pdf-link:hover, .github-link:hover {
+            text-decoration: underline;
+        }
+
+        #team h5 {
+            font-size: 140%;
+            margin-top: 8%;
+            margin-bottom: 3%;
+        }
+
+        .team-section {
+            text-align: center;
+        }
+
+        .teamMemberPhoto {
+            width: 40%;
+            border-radius: 0%;
+            object-fit: cover;
+        }
+
+        .teamMemberName {
+            margin: 10px 0 5px 0;
+            color: #333;
+        }
+
+        .margin-top-half {
+            margin-top: 12px;
+        }
+
+        .margin-top-small {
+            margin-top: 6px;
+        }
+
+        .mail-link, .github-link, .twitter-link, .linkedin-link {
+            margin: 0 5px;
+            color: #666;
+            text-decoration: none;
+        }
+
+        .mail-link:hover, .github-link:hover, .twitter-link:hover, .linkedin-link:hover {
+            color: #03a9f4;
+        }
+
+        footer.page-footer {
+            background: black;
+            color: #f6f6f6;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-section h5 {
+            color: #03a9f4;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #03a9f4;
+            text-decoration: underline;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-copyright {
+            background-color: rgba(255, 255, 255, 0.01);
+            color: #787878;
+            border-top: 1px solid rgb(49, 49, 49);
+            font-size: 15px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(3, 169, 244, 0.2);
+            color: #03a9f4;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #03a9f4;
+            color: black;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .table-of-contents {
+                display: none !important;
+            }
+
+            .button-collapse {
+                display: block !important;
+            }
+
+            .col.m3 {
+                width: 100%;
+            }
+
+            #team h5 {
+                margin-top: 12%;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            nav a.button-collapse {
+                display: none !important;
+            }
+        }

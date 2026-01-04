@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSense and Water Innovation Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a class="brand-logo" href="#"><img src="logo.png" alt="logo"></a>
+                <button class="button-collapse" onclick="toggleNav()">
+                    <div class="menuicon"></div>
+                </button>
+                <ul class="table-of-contents hide-on-menu-overflow">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#research">Conference Papers & Presentations</a></li>
+                    <li><a href="#research">Ongoing Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                     <li><a href="#team">Lab Lookbook & Gallery</a></li>
+                     <li><a href="#team">Collaborators</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="nav-mobile" class="side-nav">
+        <div>
+            <img src="https://via.placeholder.com/100" alt="menu">
+        </div>
+        <ul>
+            <li><a class="nav-link home active" href="#home" onclick="toggleNav()">Home</a></li>
+            <li><a class="nav-link news" href="#news" onclick="toggleNav()">News</a></li>
+            <li><a class="nav-link publications" href="#publications" onclick="toggleNav()">Publications</a></li>
+            <li><a class="nav-link research" href="#research" onclick="toggleNav()">Ongoing Projects</a></li>
+            <li><a class="nav-link team" href="#team" onclick="toggleNav()">Team</a></li>
+            <li><a class="nav-link team1" href="#team1" onclick="toggleNav()">LookBook</a></li>
+            <li><a class="nav-link contact" href="#contact" onclick="toggleNav()">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="scrollspy">
+        <video autoplay muted loop playsinline
+       style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:0;">
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+        <div class="no-pad-bot" style="padding: 60px 20px; text-align: center; margin-bottom: 40px;">
+            <div class="header container center">
+                <img class="header-logo" src="logo.png" alt="Lab Logo" style="margin-bottom: 30px;height: 180px;width: 210px;">
+                <div class="center no-pad-bot no-pad-top">
+                    <h2 style="color: white; margin-bottom: 20px;">Welcome<br><br>AgroSense and Water Innovation Lab</h2>
+                    <p class="white-text light" style="font-size: 16px; max-width: 800px;">
+                        We are a group of researchers focusing on tackling problems on earth observation and geospatial analysis, 
+                        specifically land use classification, change detection, environmental monitoring, crop yield prediction, and deep learning for satellite imagery analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; overflow: hidden; padding: 0;">
+            <div class="no-pad-bot" style="flex: 1; padding: 40px 20px; animation: slideInLeft 1s ease-out;">
+                <div class="center">
+                    <h2 style="color: white; text-align: left; margin-bottom: 20px;">Ongoing Projects</h2>
+                    <div style="text-align: left; max-width: 500px;">
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Automated Change Detection</h6>
+                            <p class="white-text light" style="font-size: 14px;">Detecting urban development and infrastructure changes using Sentinel-2 and SAR imagery.</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Climate-Driven LULC Mapping</h6>
+                            <p class="white-text light" style="font-size: 14px;">Integrating climate data with remote sensing for land use prediction.</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Disaster Assessment System</h6>
+                            <p class="white-text light" style="font-size: 14px;">Real-time damage assessment for floods, earthquakes, and wildfires.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1; padding: 40px 20px; animation: slideInRight 1s ease-out;">
+                <div class="center">
+                    <h2 style="color: white; text-align: right; margin-bottom: 20px;">Recent Publications</h2>
+                    <div style="text-align: left; max-width: 500px;">
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2024</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Advanced Multi-Temporal Classification Using Vision Transformers - IEEE TGRS</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2024</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Real-Time Change Detection in Urban Areas - Remote Sensing of Environment</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2023</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Crop Yield Prediction using Temporal CNNs - IEEE JSTARS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #home {
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+    
+    <div id="publications" class="section scrollspy">
+        <header class="page-header-lg">
+            <div class="header-title-block">
+                <h1 class="page-title">Publications</h1>
+            </div>
+        </header>
+
+        <div style="display: flex; align-items: flex-start; gap: 40px; margin-bottom: 60px;">
+            <div style="flex: 1; animation: slideInLeft 1s ease-out;">
+                <main>
+                    <div class="container">
+                        <div class="journal-papers">
+                            <div class="row" style="display: block;">
+                                <div class="col-sm-12">
+                                    <div class="journal-papers-meta">
+                                        <p><b><a href="#">Advanced Multi-Temporal Land Cover Classification Using Vision Transformers</a></b></p>
+                                        <p class="jp-name">Ahmed Hassan, Fatima Khan, Dr. Mohammad Rahman</p>
+                                        <p><a href="#"><i>IEEE Transactions on Geoscience and Remote Sensing, 2024</i></a></p>
+                                        <br>
+                                        <a href="#" class="pdf-link" target="_blank">PDF</a>
+                                        <a href="#" class="github-link" target="_blank">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="row" style="display: block;">
+                                <div class="col-sm-12">
+                                    <div class="journal-papers-meta">
+                                        <p><b><a href="#">Real-Time Change Detection in Urban Areas Using Graph Neural Networks</a></b></p>
+                                        <p class="jp-name">Sophia Williams, Dr. James Chen, Maria Garcia</p>
+                                        <p><a href="#"><i>Remote Sensing of Environment, 2024</i></a></p>
+                                        <br>
+                                        <a href="#" class="pdf-link" target="_blank">PDF</a>
+                                        <a href="#" class="github-link" target="_blank">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="row" style="display: block;">
+                                <div class="col-sm-12">
+                                    <div class="journal-papers-meta">
+                                        <p><b><a href="#">Crop Yield Prediction using Temporal Convolutional Networks and Sentinel-2 Data</a></b></p>
+                                        <p class="jp-name">Dr. Ahmad Hassan, Priya Singh, Mark Johnson</p>
+                                        <p><a href="#"><i>IEEE Journal of Selected Topics in Applied Earth Observations, 2023</i></a></p>
+                                        <br>
+                                        <a href="#" class="pdf-link" target="_blank">PDF</a>
+                                        <a href="#" class="github-link" target="_blank">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div style="flex: 1; animation: slideInRight 1s ease-out;">
+                <img src="https://via.placeholder.com/400x500?text=Research+Papers" alt="Publications" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: sticky; top: 100px;">
+            </div>
+        </div>
+
+        <header class="page-header-lg">
+            <div class="header-title-block">
+                <h1 class="page-title">Preprints</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="journal-papers">
+                    <div class="row" style="display: block;">
+                        <div class="col-sm-12">
+                            <div class="journal-papers-meta">
+                                <p><b><a href="#">Advanced Change Detection Methods for Multi-Temporal Satellite Imagery</a></b></p>
+                                <p class="jp-name">David Park, Sarah Thompson</p>
+                                <p><a href="#"><i>ArXiv Pre-print, 2024</i></a></p>
+                                <br>
+                                <a href="#" class="pdf-link" target="_blank">PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="research" class="section scrollspy" style="background-color: floralwhite;">
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col s12">
+                    <header class="page-header-lg">
+                        <div class="header-title-block">
+                            <h1 class="page-title">Ongoing Projects</h1>
+                        </div>
+                    </header>
+
+                    <ol>
+                        <li>
+                            <h6>Automated Real-Time Change Detection in Urban Areas</h6>
+                            <p>Developing deep learning algorithms to automatically detect urban development, building construction, and infrastructure changes using time-series Sentinel-2 and Sentinel-1 SAR imagery. The project aims to enable city planners and environmental agencies to monitor rapid urban growth in near real-time with high accuracy and minimal false positives.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="section scrollspy">
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col s12">
+                    <header class="page-header-lg">
+                        <div class="header-title-block">
+                            <h1 class="page-title">Meet the team</h1>
+                        </div>
+                    </header>
+                    <br>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Dr. Md Touhidul Islam.jpg" alt="Dr. Md Touhidul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Dr. Md Touhidul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Professor, Director</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="mailto:m.rahman@university.edu" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                    <a href="#" class="github-link">GitHub</a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="team/M. Shafiul Islam.jpg" alt="M. Shafiul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">M. Shafiul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">MS-2 Student</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Irfan Akbar.jpg" alt="Irfan Akbar" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Irfan Akbar</h6>
+                                </div>
+                                <br>
+                                <span class="h7">MS-2 Student</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Mahadi Hasan Joy.jpg" alt="Mahadi Hasan Joy" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Mahadi Hasan Joy</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2
+</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Akash.jpg" alt="Akash" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Akash</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Aminul Islam.jpg" alt="Aminul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Aminul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Musfiqus Shalehin.jpg" alt="Musfiqus Shalehin" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Musfiqus Shalehin</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Mst. Rimi Khatun.jpg" alt="Mst. Rimi Khatun" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Mst. Rimi Khatun</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Md. Arafat Rahman.jpg" alt="Md. Arafat Rahman" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Md. Arafat Rahman</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="team-section">Alumni</h5>
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Md. Arafat Rahman.jpg" alt="Md. Arafat Rahman" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Md. Arafat Rahman</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Senior Data Scientist, Tech Company</span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="https://via.placeholder.com/150" alt="Maria Garcia" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Maria Garcia</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Research Engineer, Geo-Tech Startup</span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <footer id="contact " class="page-footer scrollspy">
+        <div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#research">Ongoing Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Contact Us</h5>
+                <p>Remote Sensing Lab<br>University of Technology<br>123 Research Avenue<br>City, State 12345</p>
+                <p><a href="mailto:lab@university.edu">lab@university.edu</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <div class="social-links">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="GitHub">★</a>
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="Email">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Download Datasets</a></li>
+                    <li><a href="#">GitHub Repository</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Research Tools</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2024 Remote Sensing Lab. All rights reserved. | <a href="#" style="color: #787878;">Privacy Policy</a> | <a href="#" style="color: #787878;">Terms of Service</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('nav-mobile');
+            nav.classList.toggle('active');
+        }
+
+        function toggleCollapse(element) {
+            const nextUl = element.nextElementSibling;
+            if (nextUl && nextUl.classList.contains('icontent')) {
+                nextUl.classList.toggle('icontent-active');
+            }
+        }
+    </script>
+</body>
+</html>
