@@ -532,15 +532,61 @@ showMoreBtn.addEventListener("click", () => {
     </div>
 </div>
 
+<!-- Lookbook & Gallery Section -->
+<div id="lookbook" class="section scrollspy" style="background-color:#f0f4f8; padding:60px 20px;">
+    <div class="container" style="max-width:1200px; margin:auto; text-align:center;">
 
+        <header style="margin-bottom:40px;">
+            <h1 style="font-weight:700; letter-spacing:1px; color:#003494;">Lookbook & Gallery</h1>
+            <hr style="border:1px solid rgba(0,0,0,0.2); width:80px; margin:10px auto 0 auto;">
+        </header>
+
+        <div class="gallery-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px; align-items:center; justify-items:center;">
+            
+            <!-- Image 1 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+1" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+1" alt="Gallery Image 1" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 2 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+2" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+2" alt="Gallery Image 2" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 3 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+3" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+3" alt="Gallery Image 3" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 4 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+4" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+4" alt="Gallery Image 4" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 5 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+5" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+5" alt="Gallery Image 5" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+        </div>
+    </div>
 </div>
- <section id="lookbook" class="m-media-grid c-panel--black" style="background-color: #003494;">
+ <section id="lookbook" class="m-media-grid c-panel--black">
         <div class="o-container-fluid c-panel--line">
             <div class="m-media-grid__columns">
                 <div class="m-media-grid__text">
                     <div class="o-row o-row--start">
-                        
-                        <div class="c-panel__title o-col-6 o-col-sm-10">
+                        <div class="c-panel__title-icon o-col-2">
+                            <span class="title-serif--xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25">
+                                    <title>Groups</title>
+                                    <g fill-rule="evenodd">
+                                        <path fill-rule="nonzero" d="M14.91024 6.395C14.91024 3.61181314 12.649406 1.35467742 9.86024 1.35467742 7.07107399 1.35467742 4.81024 3.61181314 4.81024 6.395 4.81024 9.17818686 7.07107399 11.4353226 9.86024 11.4353226 12.649406 11.4353226 14.91024 9.17818686 14.91024 6.395zM16.41024 6.395C16.41024 10.0071642 13.4772839 12.9353226 9.86024 12.9353226 6.2431961 12.9353226 3.31024 10.0071642 3.31024 6.395 3.31024 2.78283579 6.2431961-.145322581 9.86024-.145322581 13.4772839-.145322581 16.41024 2.78283579 16.41024 6.395zM27.46256 11.4353226C27.46256 9.76204736 26.1035605 8.40548387 24.42616 8.40548387 22.7480587 8.40548387 21.38896 9.76194845 21.38896 11.4353226 21.38896 13.1086967 22.7480587 14.4651613 24.42616 14.4651613 26.1035605 14.4651613 27.46256 13.1085978 27.46256 11.4353226zM28.96256 11.4353226C28.96256 13.937628 26.9313858 15.9651613 24.42616 15.9651613 21.9202824 15.9651613 19.88896 13.937776 19.88896 11.4353226 19.88896 8.93286919 21.9202824 6.90548387 24.42616 6.90548387 26.9313858 6.90548387 28.96256 8.9330172 28.96256 11.4353226zM25.13048 19.7456452C23.9914653 19.7456452 22.9256636 20.0629776 22.0154968 20.6684751L21.1846632 19.4195894C22.3427959 18.6491301 23.6979518 18.2456452 25.13048 18.2456452 28.7278876 18.2456452 31.6129245 20.7188419 32.2699388 24.5961494L32.4182598 25.4714516 23.35048 25.4714516 23.35048 23.9714516 30.5901561 23.9714516C29.8155915 21.3318815 27.7170548 19.7456452 25.13048 19.7456452zM18.1050582 24.0423301C17.0682435 19.6052224 13.8430768 16.9020161 9.85978308 16.9020161 5.87919147 16.9012894 2.65509598 19.6013602 1.61732176 24.0346253 6.32525538 24.0403612 10.9624898 24.0421921 18.1050582 24.0423301zM-.0348317993 24.6635544C.881106597 19.0084993 4.86983038 15.4011052 9.85992 15.4020161 14.853135 15.4020161 18.8427918 19.0133254 19.7571195 24.6727203L19.8976144 25.5423387 19.01672 25.5423387C10.8769116 25.5423387 5.93561564 25.5403801.704528852 25.5334671L-.175541512 25.532304-.0348317993 24.6635544z"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="c-panel__title o-col-9 o-col-sm-10">
                             <h2 class="m-media-grid__title title-serif--xl" id="m-media-grid-title-residential-life">
                                 Lab Lookbook & Gallery
                             </h2>
@@ -558,8 +604,14 @@ showMoreBtn.addEventListener("click", () => {
                                     </a>
                                 </div>
                             </div>
-   
-                            
+
+                            <!-- Map Section -->
+                            <div style="margin-top: 40px;">
+                                <a href="https://map.harvard.edu/" class="m-site-info__addresses-map-link" target="_blank" aria-label="Visit the Lab Campus Map">
+                                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=300&fit=crop" alt="Lab Campus Map">
+                                    <noscript><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=300&fit=crop" alt="Lab Campus Map"/></noscript>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -579,71 +631,24 @@ showMoreBtn.addEventListener("click", () => {
                             </div>
                         </figure>
                     </li>
-                    
-                    
+                    <li class="m-media-grid__item">
+                        <figure class="c-media c-media--wysiwyg_inline">
+                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=533&fit=crop" width="800" height="533" alt="Field work">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="m-media-grid__item">
+                        <figure class="c-media c-media--wysiwyg_inline">
+                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=533&fit=crop" width="800" height="533" alt="Conference">
+                            </div>
+                        </figure>
+                    </li>
                 </ul>
             </div>
-
-            
         </div>
-
-        
     </section>
-
-  
-
-    <script>
-        let current = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        const thumbs = document.querySelectorAll('.thumb');
-        const total = slides.length;
-
-        const data = [
-            { title: "Team Collaboration", tags: ["Earth Observation", "Team Science"] },
-            { title: "Research Innovation", tags: ["Machine Learning", "Innovation"] },
-            { title: "Lab Workspace", tags: ["Infrastructure", "Technology"] },
-            { title: "Development & Testing", tags: ["Testing", "Methodology"] },
-            { title: "Field Research", tags: ["Field Studies", "Data Collection"] },
-            { title: "Scientific Innovation", tags: ["Innovation", "Sustainability"] },
-            { title: "Knowledge Dissemination", tags: ["Presentation", "Communication"] },
-            { title: "Team Excellence", tags: ["Achievement", "Excellence"] }
-        ];
-
-        function show(n) {
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => d.classList.remove('active'));
-            thumbs.forEach(t => t.classList.remove('active'));
-
-            slides[n].classList.add('active');
-            dots[n].classList.add('active');
-            thumbs[n].classList.add('active');
-
-            document.getElementById('current').textContent = String(n + 1).padStart(2, '0');
-            document.getElementById('overlay-title').textContent = data[n].title;
-            document.getElementById('overlay-tag1').textContent = data[n].tags[0];
-            document.getElementById('overlay-tag2').textContent = data[n].tags[1];
-
-            current = n;
-
-            const prog = document.querySelector('.progress');
-            prog.style.animation = 'none';
-            setTimeout(() => {
-                prog.style.animation = 'progress 5s linear forwards';
-            }, 10);
-        }
-
-        function next() { show((current + 1) % total); }
-        function prev() { show((current - 1 + total) % total); }
-        function go(n) { show(n); }
-
-        document.addEventListener('keydown', e => {
-            if (e.key === 'ArrowLeft') prev();
-            if (e.key === 'ArrowRight') next();
-        });
-
-        setInterval(next, 5000);
-    </script>
 
 
 

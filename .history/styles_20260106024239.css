@@ -510,399 +510,74 @@
                 display: none !important;
             }
         }
-        
-        /* ===== Nature-style Publications ===== */
-
+        /* ===== Publications ===== */
 .publications-list {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .pub-year {
-    font-size: 26px;
-    font-weight: 400;
-    margin: 50px 0 25px;
-    color: #111;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 40px 0 20px;
+    color: #333;
+    border-bottom: 2px solid #03a9f4;
+    padding-bottom: 6px;
 }
 
 .publication {
-    padding: 0 0 22px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid #eee;
-}
-
-.publication:last-child {
-    border-bottom: none;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border-left: 4px solid #03a9f4;
+    background: #fafafa;
 }
 
 .publication-title {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.35;
-    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
     margin-bottom: 6px;
-    font-family: Georgia, "Times New Roman", serif;
 }
 
 .publication-title a {
-    color: #111;
+    color: #222;
     text-decoration: none;
 }
 
 .publication-title a:hover {
+    color: #03a9f4;
     text-decoration: underline;
 }
 
 .publication-authors {
     font-size: 14px;
     color: #555;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .publication-journal {
     font-size: 14px;
     font-style: italic;
-    color: #222;
+    color: #333;
 }
 
 .publication-meta {
     font-size: 13px;
     color: #777;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .pub-links {
-    margin-top: 6px;
+    margin-top: 8px;
 }
 
 .pub-links a {
     font-size: 13px;
-    color: #1a73e8; /* Nature-like blue */
+    color: #03a9f4;
+    margin-right: 15px;
     text-decoration: none;
-    margin-right: 14px;
 }
 
 .pub-links a:hover {
     text-decoration: underline;
 }
-
-/* ===== Publications – Dark Nature Style ===== */
-
-#publications {
-    background-color: #003494;
-    color: #e6ebf5;
-}
-
-#publications .page-title {
-    color: #ffffff;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-#publications .publications-list {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#publications .pub-year {
-    font-size: 26px;
-    font-weight: 400;
-    margin: 50px 0 25px;
-    color: #ffffff;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-    padding-bottom: 8px;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-#publications .publication {
-    padding: 0 0 22px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid rgba(255,255,255,0.18);
-}
-
-#publications .publication:last-child {
-    border-bottom: none;
-}
-
-#publications .publication-title {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.35;
-    color: #ffffff;
-    margin-bottom: 6px;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-#publications .publication-title a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#publications .publication-title a:hover {
-    text-decoration: underline;
-}
-
-#publications .publication-authors {
-    font-size: 14px;
-    color: #d4dcf2;
-    margin-bottom: 3px;
-}
-
-#publications .publication-journal {
-    font-size: 14px;
-    font-style: italic;
-    color: #ffffff;
-}
-
-#publications .publication-meta {
-    font-size: 13px;
-    color: #c2cbea;
-    margin-top: 2px;
-}
-
-#publications .pub-links {
-    margin-top: 6px;
-}
-
-#publications .pub-links a {
-    font-size: 13px;
-    color: #9fc3ff; /* Nature-like link blue on dark */
-    text-decoration: none;
-    margin-right: 14px;
-}
-
-#publications .pub-links a:hover {
-    text-decoration: underline;
-}
-
-/* ===== ORCID Styling ===== */
-
-.author {
-    color: #d4dcf2;
-}
-
-.author a.orcid-link {
-    margin-left: 4px;
-    color: #A6CE39; /* Official ORCID green */
-    font-size: 15px;
-    vertical-align: middle;
-    text-decoration: none;
-}
-
-.author a.orcid-link:hover {
-    opacity: 0.8;
-}
-
-.author a.orcid-link i {
-    vertical-align: middle;
-}
-
-/* ===== Right-aligned publication meta ===== */
-
-.publication-footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 16px;
-    margin-top: 6px;
-    font-size: 13px;
-    color: #c2cbea;
-    flex-wrap: wrap;
-    text-align: right;
-}
-
-.publication-footer .journal {
-    font-style: italic;
-    color: #ffffff;
-}
-
-.publication-footer .doi a {
-    color: #9fc3ff;
-    text-decoration: none;
-}
-
-.publication-footer .doi a:hover {
-    text-decoration: underline;
-}
-
-
-    .collaborators-logos img:hover {
-        transform: scale(1.1);
-        opacity: 0.9;
-    }
-
-    @media only screen and (max-width: 600px) {
-        .collaborators-logos {
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap:20px;
-        }
-        .collaborators-logos img {
-            max-width:80px;
-        }
-    }
-
-    .m-media-grid {
-            background-color: #000;
-            padding: 80px 0;
-        }
-
-        .c-panel--line {
-            padding: 60px 20px;
-        }
-
-        .m-media-grid__columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            max-width: 1400px;
-            margin: 0 auto;
-            align-items: flex-start;
-        }
-
-        .m-media-grid__text { color: white; }
-
-        .o-row {
-            display: flex;
-            gap: 30px;
-        }
-
-        .o-col-2 { flex: 0 0 16.666%; }
-        .o-col-9 { flex: 0 0 75%; }
-
-        .c-panel__title-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 10px;
-        }
-
-        .title-serif--xl {
-            font-size: 2.5rem;
-            color: white;
-            display: block;
-        }
-
-        .title-serif--xl svg { fill: white; }
-
-        .m-media-grid__title {
-            font-family: Georgia, serif;
-            font-size: 2.5rem;
-            color: white;
-            margin: 0;
-            line-height: 1.2;
-            font-weight: 400;
-        }
-
-        .m-media-grid__subtitle {
-            font-size: 1.05rem;
-            color: rgba(255,255,255,0.9);
-            line-height: 1.7;
-            margin: 20px 0 30px 0;
-        }
-
-        .c-button--link-wrapper a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 500;
-            transition: gap 0.3s;
-            width: fit-content;
-        }
-
-        .c-button--link-wrapper a:hover {
-            gap: 15px;
-        }
-
-        .c-button__icon {
-            display: inline-block;
-            width: 21px;
-            height: 16px;
-        }
-
-        .c-button__icon svg {
-            fill: white;
-            width: 100%;
-            height: 100%;
-        }
-
-        .c-teaser-list--black {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .m-media-grid__item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 2px;
-        }
-
-        .c-media__media {
-            width: 100%;
-            height: 280px;
-            overflow: hidden;
-        }
-
-        .m-media-grid__item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .m-media-grid__item:hover img {
-            transform: scale(1.08);
-        }
-
-        /* Map Styles */
-        .m-site-info__addresses-map-link {
-            display: inline-block;
-            width: 100%;
-            max-width: 400px;
-            margin-top: 30px;
-            border-radius: 2px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .m-site-info__addresses-map-link:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(255,255,255,0.1);
-        }
-
-        .m-site-info__addresses-map-link img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        @media (max-width: 768px) {
-            .m-media-grid__columns {
-                grid-template-columns: 1fr;
-            }
-            .o-row {
-                flex-direction: column;
-            }
-            .o-col-2, .o-col-9 {
-                flex: 1 1 100%;
-            }
-            .c-teaser-list--black {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .m-media-grid__title {
-                font-size: 1.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .c-teaser-list--black {
-                grid-template-columns: 1fr;
-            }}
-
-            

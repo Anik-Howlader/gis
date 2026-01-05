@@ -903,6 +903,4 @@
         @media (max-width: 480px) {
             .c-teaser-list--black {
                 grid-template-columns: 1fr;
-            }}
-
-            
+            }

@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSense and Water Innovation Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a class="brand-logo" href="#"><img src="logo.png" alt="logo"></a>
+                <button class="button-collapse" onclick="toggleNav()">
+                    <div class="menuicon"></div>
+                </button>
+                <ul class="table-of-contents hide-on-menu-overflow">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#research">Conference Papers & Presentations</a></li>
+                    <li><a href="#research">Ongoing Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                     <li><a href="#team">Lab Lookbook & Gallery</a></li>
+                     <li><a href="#team">Collaborators</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="nav-mobile" class="side-nav">
+        <div>
+            <img src="https://via.placeholder.com/100" alt="menu">
+        </div>
+        <ul>
+            <li><a class="nav-link home active" href="#home" onclick="toggleNav()">Home</a></li>
+            <li><a class="nav-link news" href="#news" onclick="toggleNav()">News</a></li>
+            <li><a class="nav-link publications" href="#publications" onclick="toggleNav()">Publications</a></li>
+            <li><a class="nav-link research" href="#research" onclick="toggleNav()">Ongoing Projects</a></li>
+            <li><a class="nav-link team" href="#team" onclick="toggleNav()">Team</a></li>
+            <li><a class="nav-link team1" href="#team1" onclick="toggleNav()">LookBook</a></li>
+            <li><a class="nav-link contact" href="#contact" onclick="toggleNav()">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="scrollspy">
+        <video autoplay muted loop playsinline
+       style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:0;">
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+        <div class="no-pad-bot" style="padding: 60px 20px; text-align: center; margin-bottom: 40px;">
+            <div class="header container center">
+                <img class="header-logo" src="logo.png" alt="Lab Logo" style="margin-bottom: 30px;height: 180px;width: 210px;">
+                <div class="center no-pad-bot no-pad-top">
+                    <h2 style="color: white; margin-bottom: 20px;">Welcome<br><br>AgroSense and Water Innovation Lab</h2>
+                    <p class="white-text light" style="font-size: 16px; max-width: 800px;">
+                        We are a group of researchers focusing on tackling problems on earth observation and geospatial analysis, 
+                        specifically land use classification, change detection, environmental monitoring, crop yield prediction, and deep learning for satellite imagery analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; overflow: hidden; padding: 0;">
+            <div class="no-pad-bot" style="flex: 1; padding: 40px 20px; animation: slideInLeft 1s ease-out;">
+                <div class="center">
+                    <h2 style="color: white; text-align: left; margin-bottom: 20px;">Ongoing Projects</h2>
+                    <div style="text-align: left; max-width: 500px;">
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Automated Change Detection</h6>
+                            <p class="white-text light" style="font-size: 14px;">Detecting urban development and infrastructure changes using Sentinel-2 and SAR imagery.</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Climate-Driven LULC Mapping</h6>
+                            <p class="white-text light" style="font-size: 14px;">Integrating climate data with remote sensing for land use prediction.</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Disaster Assessment System</h6>
+                            <p class="white-text light" style="font-size: 14px;">Real-time damage assessment for floods, earthquakes, and wildfires.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1; padding: 40px 20px; animation: slideInRight 1s ease-out;">
+                <div class="center">
+                    <h2 style="color: white; text-align: right; margin-bottom: 20px;">Recent Publications</h2>
+                    <div style="text-align: left; max-width: 500px;">
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2024</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Advanced Multi-Temporal Classification Using Vision Transformers - IEEE TGRS</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2024</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Real-Time Change Detection in Urban Areas - Remote Sensing of Environment</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2023</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Crop Yield Prediction using Temporal CNNs - IEEE JSTARS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #home {
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+    
+    <div id="publications" class="section scrollspy">
+        <header class="page-header-lg">
+            <div class="header-title-block">
+                <h1 class="page-title">Publications</h1>
+            </div>
+        </header>
+
+        <div style="display: flex; align-items: flex-start; gap: 40px; margin-bottom: 60px;">
+            <div style="flex: 1; animation: slideInLeft 1s ease-out;">
+                <main>
+                    <div class="container">
+                       <table width="100%" id="table_id" style="font-family:'arial'; font-size:14px;" class="table dataTable">
+                           <tbody id="publicationTableBody">
+                                                      <tr><td><strong><span style="font-size:16px;">Journal Article (51)</span></strong></td></tr>
+                                                          <tr><td><strong><span style="font-size:16px;">2025</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>1. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.jafr.2025.102571" target="_blank">Future Water Management Strategies for Potato Irrigation Under Multiple Climate Change Scenarios Using Advanced CMIP6 Modeling in Subtropical Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Agriculture and Food Research</span><br>
+                                <br>
+                                Author List: Md Touhidul Islam, Deboneel Kundu Partho, Nusrat Jahan, Md Jannatun Naiem, Tahira Ferdoushi Marzia, Md Mazharul Islam, Nahidul Islam, Sujan Chandra Roy, Akm Adham<br>                               
+                                Vol. 25, pp . 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>2. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2166/wpt.2025.170" target="_blank">Addressing water scarcity and waste: innovative irrigation for wheat using dairy effluent and the alternate wetting-drying practice</a> 								</span></strong>  <br>
+                                <span class="tag-class">Water Practice &amp; Technology</span><br>
+                                <br>
+                                Author List: Juli Akter, Md Touhidul Islam, Nusrat Jahan, Mohammed Mizanur Rahman, Muhammad Tofazzal Hossain, Kazunori Fujisawa, AKM Adham<br>                               
+                                Vol. , pp . 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>3. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2166/h2oj.2025.028" target="_blank">Climate and land use change threaten irrigation water quality in Bangladesh: machine learning and global climate models reveal future risks</a> 								</span></strong>  <br>
+                                <span class="tag-class">H2Open Journal</span><br>
+                                Publication: IWA Publishing<br>
+                                Author List: Md Touhidul Islam; Asif  Ahammed; Md Rakibul  Islam; M Shafiul  Islam; Nusrat  Jahan; Mst  Queen; AKM  Adham; <br>                               
+                                Vol. 8, pp 375-401. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>4. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.rineng.2025.108194" target="_blank">From Short to Long-Term Horizons: Comparative Assessment of Machine Learning and Deep Learning for River Stage Prediction with Spatial Transferability Analysis</a> 								</span></strong>  <br>
+                                <span class="tag-class">Results in Engineering</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Md Touhidul Islam; Md Abdullah Al-Sufi  Ridoy; Nusrat  Jahan; Sujan Chandra  Roy; AKM  Adham; <br>                               
+                                Vol. 28, pp 108194. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>5. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2166/wcc.2025.164" target="_blank">Rainfall and temperature-driven machine learning models for multi-station water level forecasting in the old Brahmaputra river, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Water and Climate Change</span><br>
+                                Publication: IWA Publishing<br>
+                                Author List: Md Touhidul Islam; Sujan Chandra  Roy; Nusrat  Jahan; Md Ashraful  Islam; AKM  Adham; <br>                               
+                                Vol. 16, pp jwc2025164. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>6. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.rineng.2025.106496" target="_blank">Integrated GIS, Statistical Modeling, and CMIP6-Based Assessment of Groundwater Irrigation Quality in North-Central Bangladesh for Sustainable Management</a> 								</span></strong>  <br>
+                                <span class="tag-class">Results in Engineering</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Md Touhidul Islam; Nilima  Das; Md Rakibul  Islam; Mahadi Hasan  Joy; Mst Rimi  Khatun; Nusrat  Jahan; Nahidul  Islam; Md Mazharul  Islam; Sujan Chandra  Roy; Akm  Adham<br>                               
+                                Vol. 27, pp 106496. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>7. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.jafr.2025.102225" target="_blank">Climate-Smart Irrigation Planning for Rabi Maize (Zea mays L.): CMIP6 Multi-model Projections in North-central Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Agriculture and Food Research</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Md Touhidul Islam; Deboneel Kundu  Partho; Nusrat  Jahan; Md Tarek  Abrar; Azizul  Hakim; Md Mazharul  Islam; Md Touhidul  Haider; AKM  Adham<br>                               
+                                Vol. 23, pp 102225. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>8. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2166/h2oj.2025.016 " target="_blank">Enhancing monthly extreme water level predictions in a flood-prone river basin using regression-based machine learning</a> 								</span></strong>  <br>
+                                <span class="tag-class">H2Open Journal</span><br>
+                                Publication: IWA Publishing<br>
+                                Author List: Md Touhidul Islam; Sujan Chandra  Roy; Nusrat  Jahan; M Shafiul  Islam; Asif  Ahammed; Irfan  Akbar; AKM  Adham; <br>                               
+                                Vol. 8, pp h2oj2025016. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>9. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.15377/2410-3624.2025.12.2" target="_blank">GIS-based evaluation of pollution sources and water quality status in the Turag River, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">The Global Environmental Engineers</span><br>
+                                <br>
+                                Author List: Md. Mahadee Hasan Rony, Md. Touhidul Islam, Zahida Muyen, Marjana Godhuli, Mst. Nasrin Sultana, A.K.M. Adham<br>                               
+                                Vol. 12, pp 5-21. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>10. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.pdisas.2025.100449" target="_blank">Comparative evaluation of machine learning models for extreme river water level forecasting in Bangladesh: Implications for flood and drought resilience</a> 								</span></strong>  <br>
+                                <span class="tag-class">Progress in Disaster Science</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Md Touhidul Islam; Sujan Chandra  Roy; Nusrat  Jahan; Mazharul  Islam; Abdullah  Al Ferdaus; Kazunori  Fujisawa; AKM  Adham<br>                               
+                                Vol. 27, pp 100449. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>11. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1007/s10333-025-01037-4 " target="_blank">Rice yield, water and nitrogen use efficiencies, and soil physicochemical properties as influenced by alternate wetting and drying coupled with N-fertilizer interactions in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Paddy and Water Environment</span><br>
+                                Publication: Springer<br>
+                                Author List: Md Touhidul Islam; Abdullah Al  Ferdaus; Jannatun Nahar  Lia; Nusrat  Jahan; Mst  Queen; Mohammad Golam  Kibria; AKM  Adham<br>                               
+                                Vol. 23, pp 1-19. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>12. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1007/s10333-025-01039-2" target="_blank">Optimizing raised bed widths with conserving furrow irrigation: effects on crop-water productivity and soil moisture in wheat cultivation in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Paddy and Water Environment</span><br>
+                                Publication: Springer<br>
+                                Author List: Md. Touhidul Islam, K. M. Kulsum Akter, Nilima Das, Nusrat Jahan, Mohammed Mizanur Rahman, A.K.M. Adham<br>                               
+                                Vol. 23, pp 1-16. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>13. <span style="font-size:16px;">
+								 <a href=" https://doi.org/10.2166/wpt.2025.071" target="_blank">Optimizing water footprints and yield sustainability in Boro rice through alternate wetting and intense drying: a climate-resilient strategy for Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Water Practice &amp; Technology</span><br>
+                                Publication: IWA Publishing<br>
+                                Author List: Md Touhidul Islam; Md Asibur Rahman  Abir; Nusrat  Jahan; Mahadi Hasan  Joy; Sharmin Sultana  Shammi; Mohammed Mizanur  Rahman; Kazunori  Fujisawa; AKM  Adham; <br>                               
+                                Vol. 20, pp wpt2025071. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>14. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.13057/asianjagric/g090102 " target="_blank">Optimizing raised bed dimensions for enhanced maize yield, water footprint reduction, and improved soil moisture dynamics under furrow irrigation</a> 								</span></strong>  <br>
+                                <span class="tag-class">Asian Journal of Agriculture</span><br>
+                                <br>
+                                Author List: Md Touhidul Islam, Muhammad Younus Bhuyan, Nilima Das, Nusrat Jahan, Mohammed Mizanur Rahman, Md Arif Hossain Jewel, AKM Adham<br>                               
+                                Vol. 9, pp 10-22. 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2024</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>15. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3233/AJW240076" target="_blank">Characterisation of Power Plant Disposal Water from Two Distinct Regions in Bangladesh: A Comparative Assessment of Irrigation Feasibility</a> 								</span></strong>  <br>
+                                <span class="tag-class">Asian Journal of Water, Environment and Pollution</span><br>
+                                Publication: IOS Press<br>
+                                Author List: Debashree Halder Tuli; Md Touhidul  Islam; Nusrat  Jahan; Nilima  Das; Mohammed Mizanur  Rahman; AKM  Adham; <br>                               
+                                Vol. 21, pp 91-100. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>16. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.rineng.2024.103667" target="_blank">Regional Irrigation Water Quality Index for the Old Brahmaputra River, Bangladesh: A Multivariate and GIS-Based Spatiotemporal Assessment</a> 								</span></strong>  <br>
+                                <span class="tag-class">Results in Engineering</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Md Touhidul Islam; Mst Rimi  Khatun; Nusrat  Jahan; Md Rakibul  Islam; Deboneel Kundu  Partho; Mohammad Golam  Kibria; AKM  Adham<br>                               
+                                Vol. 24, pp 103667. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>17. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.rineng.2024.103665" target="_blank">Modeling Boro Rice Water Requirements and Irrigation Schedules in Mymensingh, Bangladesh, under Subtropical Climate Change</a> 								</span></strong>  <br>
+                                <span class="tag-class">Results in Engineering</span><br>
+                                Publication: Elsevier<br>
+                                Author List: MT Islam; M  Shalehin; N  Jahan; MR  Islam; AKM  Adham; <br>                               
+                                Vol. 24, pp 103665. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>18. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1007/s10333-024-01008-1" target="_blank">Impact of dairy wastewater on paddy rice cultivation, leachate microbes, and soil health under alternate wetting and drying irrigation</a> 								</span></strong>  <br>
+                                <span class="tag-class">Paddy and Water Environment</span><br>
+                                Publication: Springer<br>
+                                Author List: Juli Akter; Md Touhidul  Islam; Nusrat  Jahan; Mohammed Mizanur  Rahman; MG Mostofa  Amin; Muhammad Tofazzal  Hossain; AKM  Adham; <br>                               
+                                Vol. 23, pp 1-17. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>19. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.9734/ijecc/2024/v14i74315" target="_blank">Enhancing Flood Risk Management: A Comparative Study of Regional Frequency Models in the Upper Meghna River, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">International Journal of Environment and Climate Change</span><br>
+                                <br>
+                                Author List: Md Touhidul Islam; Nusrat  Jahan; Nilima  Das; Md Asibur Rahman  Abir; Abdullah Al  Ferdaus; M Shafiul  Islam; Mohammed Mizanur  Rahman; AKM  Adham; <br>                               
+                                Vol. 14, pp 749-765. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>20. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.59983/s2024020202 " target="_blank">Numerical Verification of Groundwater Suitability for Irrigation Around the Subsurface Dam Area of Miyako Island, Japan</a> 								</span></strong>  <br>
+                                <span class="tag-class">AgroEnvironmental Sustainability</span><br>
+                                <br>
+                                Author List: AKM Adham; Md Touhidul  Islam; <br>                               
+                                Vol. 2, pp 74-83. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>21. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1007/s10333-024-00992-8" target="_blank">Partitioning water footprints of rice for assessing their implications in the face of climate change in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Paddy and Water Environment</span><br>
+                                Publication: Springer<br>
+                                Author List: Md Touhidul Islam; MG Mostofa  Amin; Deen  Islam; Nusrat  Jahan; Mostafijur  Rahman; <br>                               
+                                Vol. 22, pp 1-14. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>22. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1002/rra.4329" target="_blank">Assessment of spawning habitat suitability for Amphidromous Ayu (Plecoglossus altivelis) in tidal Asahi River sections in Japan: Implications for conservation and restoration</a> 								</span></strong>  <br>
+                                <span class="tag-class">River Research and Applications</span><br>
+                                Publication: John Wiley &amp; Sons, Ltd.<br>
+                                Author List: Keisuke Yoshida; Hiroshi  Yajima; Md Touhidul  Islam; Shijun  Pan; <br>                               
+                                Vol. 40, pp 1497-1511. 2024.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2023</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>23. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.26832/24566632.2023.0804025" target="_blank">Hydrochemical characterization of groundwater for consumption and agriculture: A case study from Phulpur Upazila, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Archives of Agriculture and Environmental Science</span><br>
+                                <br>
+                                Author List: Deen Islam; Rafia  Shaheen; Md  Shariot-Ullah; Md Touhidul  Islam; Nilima  Das; Nusrat  Jahan; <br>                               
+                                Vol. 8, pp 625-633. 2023.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>24. <span style="font-size:16px;">
+								 <a href="https://dx.doi.org/10.1007/s10333-023-00957-3" target="_blank">Rice cultivation under raised bed conserving irrigation technique: effects of bed width on soil wetness and yield</a> 								</span></strong>  <br>
+                                <span class="tag-class">Paddy and Water Environment</span><br>
+                                Publication: Springer<br>
+                                Author List: Tasnia Hossain Munmun; Md Touhidul  Islam; Mohammed Mizanur  Rahman; Md Alamin  Islam; Sumon  Datta; Nilima  Das; Juli  Akter; AKM  Adham; <br>                               
+                                Vol. 22, pp 1-13. 2023.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>25. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.26832/24566632.2023.0803017" target="_blank">Utilizing geographic information system and indexing to evaluate irrigation suitability of groundwater in Kalihati Upazila, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Archives of Agriculture and Environmental Science</span><br>
+                                <br>
+                                Author List: Md Touhidul Islam; Nilima  Das; Nusrat  Jahan; Md Sifat  Siddik; Khalid  Mahmud; AKM  Adham; <br>                               
+                                Vol. 8, pp 385-396. 2023.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>26. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.rineng.2023.101415" target="_blank">Mutual validation of Remote hydraulic estimates and flow model simulations using UAV-borne LiDAR and deep learning-based imaging techniques</a> 								</span></strong>  <br>
+                                <span class="tag-class">Results in Engineering</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Md Touhidul Islam; Keisuke  Yoshida; Satoshi  Nishiyama; Koichi  Sakai; <br>                               
+                                Vol. 20, pp 101415. 2023.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>27. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1080/00221686.2022.2106596" target="_blank">Three-dimensional numerical modelling of floods in river corridor with complex vegetation quantified using airborne LiDAR imagery</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Hydraulic Research</span><br>
+                                Publication: Taylor &amp; Francis<br>
+                                Author List: Keisuke Yoshida; Yuki  Kajikawa; Satoshi  Nishiyama; Md Touhidul  Islam; Shin  Adachi; Koichi  Sakai; <br>                               
+                                Vol. 61, pp 88-108. 2023.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2022</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>28. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/JBAU.101511" target="_blank">Performance of different conservation practices for irrigated paddy rice (Oryza sativa) cultivation as affected by soil texture of Mymensingh region in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Research On Crops</span><br>
+                                Publication: Gaurav Publications<br>
+                                Author List: MA Islam; MT  Islam; TH  Munmun; MM  Rahman; DH  Tuli; AB  Joy; AKM  Adham; <br>                               
+                                Vol. 23, pp 745-754. 2022.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>29. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1002/rra.4042" target="_blank">Promises and uncertainties in remotely sensed riverine hydro-environmental attributes: Field testing of novel approaches to unmanned aerial vehicle-borne lidar and imaging velocimetry</a> 								</span></strong>  <br>
+                                <span class="tag-class">River Research and Applications</span><br>
+                                Publication: Wiley Online Library<br>
+                                Author List: Md Touhidul Islam; Keisuke  Yoshida; Satoshi  Nishiyama; Koichi  Sakai; Shin  Adachi; Shijun  Pan; <br>                               
+                                Vol. 38, pp 1757-1774. 2022.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>30. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2166/hydro.2022.134" target="_blank">Airborne LiDAR-assisted deep learning methodology for riparian land cover classification using aerial photographs and its application for flood modelling</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Hydroinformatics</span><br>
+                                Publication: IWA Publishing<br>
+                                Author List: Keisuke Yoshida; Shijun  Pan; Junichi  Taniguchi; Satoshi  Nishiyama; Takashi  Kojima; Md Touhidul  Islam; <br>                               
+                                Vol. 24, pp 179-201. 2022.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>31. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1002/rra.3875" target="_blank">Characterizing vegetated rivers using novel unmanned aerial vehicle-borne topo-bathymetric green lidar: Seasonal applications and challenges</a> 								</span></strong>  <br>
+                                <span class="tag-class">River Research and Applications</span><br>
+                                Publication: Wiley Online Library<br>
+                                Author List: Md Touhidul Islam; Keisuke  Yoshida; Satoshi  Nishiyama; Koichi  Sakai; Tomoyuki  Tsuda; <br>                               
+                                Vol. 38, pp 44-58. 2022.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2021</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>32. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.4236/ajcc.2021.104029" target="_blank">Development of Environment Friendly Paddy Ecosystem for Sustainable Rice Farming through Soil Amendments with Biochar and Alternate Wetting-Drying Irrigations</a> 								</span></strong>  <br>
+                                <span class="tag-class">American Journal of Climate Change</span><br>
+                                Publication: Scientific Research Publishing<br>
+                                Author List: Muhammad Aslam Ali; Md Rajib  Hassan; Zubair  Al Islam; Sanjit Chandra  Barman; Badiuzzaman  Khan; Rehana  Khatun; Hafsa Jahan  Hiya; Md Touhidul  Islam; <br>                               
+                                Vol. 10, pp 581-596. 2021.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>33. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.1016/j.jher.2021.06.005" target="_blank">Flood risk assessment in vegetated lower Asahi River of Okayama Prefecture in Japan using airborne topo-bathymetric LiDAR and depth-averaged flow model</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Hydro-environment Research</span><br>
+                                Publication: Elsevier<br>
+                                Author List: Keisuke Yoshida; Kimihisa  Nagata; Shiro  Maeno; Koji  Mano; Shinya  Nigo; Satoshi  Nishiyama; <strong> Md. Touhidul  Islam</strong>; <br>                               
+                                Vol. 39, pp 39-59. 2021.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>34. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/JBAU.15020" target="_blank">Analysis of Arrival and Withdrawal Dates of Monsoon Rainfall in Dinajpur, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Bangladesh Agricultural University</span><br>
+                                <br>
+                                Author List: Md Shariot-Ullah; Sk Tazbir  Rahman; Md Touhidul  Islam; Md Sifat  Siddik; <br>                               
+                                Vol. 19, pp 143-151. 2021.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2020</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>35. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2208/jscejhe.76.2_I_985" target="_blank">Three-Dimensional Flood Simulation around the Lower Asahi River Fixed Diversion Weir Considering Distributed Vegetation Conditions during the Heavy Rain Event of July 2018</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)</span><br>
+                                <br>
+                                Author List: Keisuke Yoshida; Yuki  Kajikawa; Kimihisa  Nagata; Satoshi  Nishiyama; Koji  Mano; Koichi  Sakai; Md Touhidul  Islam; Shinya  Nigo; <br>                               
+                                Vol. 76, pp I_985-I_990. 2020.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>36. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.2208/jscejhe.76.2_I_529" target="_blank">Model-induced comparative study of ALB and UAV-borne green LiDAR systems on vegetated lower Asahi River assessment in Japan</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Japan Society of Civil Engineers Ser B1 (Hydraulic Engineering)</span><br>
+                                Publication: Japan Society of Civil Engineers<br>
+                                Author List: <strong> Md. Touhidul  Islam</strong>; Keisuke  Yoshida; Koichi  Sakai; Satoshi  Nishiyama; Tomoyuki  Tsuda; Shiro  Maeno; <br>                               
+                                Vol. 76, pp I_529-I_534. 2020.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>37. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/faa.129984" target="_blank">Spatial appraisal of groundwater quality for drinking purposes: A case study of a Union in Kalihati Upazila, Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Fundamental and Applied Agriculture</span><br>
+                                Publication: Farm to Fork Foundation<br>
+                                Author List: Nusrat Jahan; Md. Badiuzzaman  Khan; Muhammad Aslam  Ali; <strong> Md. Touhidul  Islam</strong>; Md. Sifat  Siddik; <br>                               
+                                Vol. 5, pp 521-536. 2020.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>38. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/JBAU.101511" target="_blank">Performance Evaluation of Class A Pan Coefficient Models to Estimate Reference Evapotranspiration in Mymensingh Region of Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Bangladesh Agricultural University</span><br>
+                                Publication: Bangladesh Agricultural University Research System (BAURES)<br>
+                                Author List: Khalid Mahmud; Md. Sifat  Siddik; Mst. Khadija  Khatun; <strong> Md. Touhidul  Islam</strong>; <br>                               
+                                Vol. 18, pp 742-750. 2020.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2019</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>39. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3329/pa.v30i1.42217" target="_blank">Climatic variability on groundwater recharge of Mymensingh district in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Progressive Agriculture</span><br>
+                                Publication: Progressive Agriculturists<br>
+                                Author List: S Akhter; A  Sharmin; MT  Islam; MS  Ullah; <br>                               
+                                Vol. 30, pp 104-112. 2019.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>40. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3329/pa.v30i1.42218" target="_blank">Suitability of powerplant disposed water for irrigation of Ashuganj agro-irrigation project in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Progressive Agriculture</span><br>
+                                Publication: Progressive Agriculturists<br>
+                                Author List: MM Rana; MT  Islam; S  Datta; MM  Rahman; AKM  Adham; <br>                               
+                                Vol. 30, pp 113-124. 2019.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>41. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/faa.45057" target="_blank">Assessing groundwater suitability for irrigation: A case study for Durgapur upazila of Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Fundamental and Applied Agriculture</span><br>
+                                Publication: Farm To Fork Foundation<br>
+                                Author List: N Das; MM  Rahman; MT  Islam; AKM  Adham; <br>                               
+                                Vol. 4, pp 916-927. 2019.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>42. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/faa.34264" target="_blank">Estimation of actual crop evapotranspiration and supplemental irrigation for Aman rice cultivation in the northern part of Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Fundamental and Applied Agriculture</span><br>
+                                Publication: Farm To Fork Foundation<br>
+                                Author List: R Sen; NN  Karim; MT  Islam; MM  Rahman; AKM  Adham; <br>                               
+                                Vol. 4, pp 873–880. 2019.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>43. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/faa.34631" target="_blank">Investigating water productivity and yield of boro rice under conventional and conservation irrigation practices in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Fundamental and Applied Agriculture</span><br>
+                                Publication: Farm To Fork Foundation<br>
+                                Author List: MM Hossain; MM  Rahman; MT  Islam; D  Islam; AKM  Adham; <br>                               
+                                Vol. 4, pp 867–872. 2019.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>44. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.5455/faa.301258" target="_blank">Evaluation of groundwater quality for irrigation and drinking purposes in Barishal district of Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Fundamental and Applied Agriculture</span><br>
+                                Publication: Farm to Fork Foundation<br>
+                                Author List: Gulshan Yasmin; Deen  Islam; Md Touhidul  Islam; Md  Shariot-Ullah; AKM  Adham; <br>                               
+                                Vol. 4, pp 632–641. 2019.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2018</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>45. <span style="font-size:16px;">
+								 <a href="https://www.researchgate.net/publication/339770561_Design_and_Performance_Evaluation_of_an_H-Flume" target="_blank">Design and Performance Evaluation of an H-Flume</a> 								</span></strong>  <br>
+                                <span class="tag-class">Bangladesh Journal of Agricultural Engineering</span><br>
+                                Publication: Agricultural Engineering Alumni Association<br>
+                                Author List: Shibli Sadik Tulip; Umme Jannat  Shoshi; Md. Nazrul  Islam; <strong> Md. Touhidul  Islam</strong>; <br>                               
+                                Vol. 29, pp . 2018.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>46. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3329/aajbb.v3i1.64749 " target="_blank">Response of dairy farm's wastewater irrigation and fertilizer interactions to soil health for maize cultivation in Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Asian-Australasian Journal of  Bioscience and Biotechnology</span><br>
+                                Publication: Ebu Press Ltd<br>
+                                Author List: Nilima Das; <strong> Md. Touhidul  Islam</strong>; Md. Symum  Islam; AKM  Adham; <br>                               
+                                Vol. 3, pp 33-39. 2018.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2017</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>47. <span style="font-size:16px;">
+								 <a href="https://www.researchgate.net/publication/333448178_Estimation_of_Direct_Runoff_and_Runoff_Coefficient_for_Different_Storm_Events_in_a_Small_Catchment" target="_blank">Estimation of Direct Runoff and Runoff Coefficient for Different Storm Events in a Small Catchment</a> 								</span></strong>  <br>
+                                <span class="tag-class">Bangladesh Journal of Agricultural Engineering</span><br>
+                                Publication: Agricultural Engineering Alumni Association<br>
+                                Author List: Debashis Basak; Md. Nazrul  Islam; <strong> Md. Touhidul  Islam</strong>; Md  Shariot-Ullah; <br>                               
+                                Vol. 28, pp 11-19. 2017.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>48. <span style="font-size:16px;">
+								 <a href="https://www.f2ffoundation.org/faa/index.php/home/article/view/174" target="_blank">Impacts of dairy farm's wastewater irrigation on growth and yield attributes of maize</a> 								</span></strong>  <br>
+                                <span class="tag-class">Fundamental and Applied Agriculture</span><br>
+                                Publication: Farm To Fork Foundation<br>
+                                Author List: Md Symum Islam; Md Touhidul  Islam; Shaikh Abdullah Al Mamun  Hossain; A K M  Adham; Deen  Islam; <br>                               
+                                Vol. 2, pp 247-255. 2017.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>49. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3329/pa.v28i1.32858" target="_blank">Estimation of supplemental irrigation for Aman rice cultivation in Bogra and Dinajpur districts of Bangladesh</a> 								</span></strong>  <br>
+                                <span class="tag-class">Progressive Agriculture</span><br>
+                                Publication: Progressive Agriculturists<br>
+                                Author List: R Sen; NN  Karim; MT  Islam; AKM  Adham; <br>                               
+                                Vol. 28, pp 42-54. 2017.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2016</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>50. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.15866/irece.v7i1.8239  " target="_blank">Effect of Climate Change on Groundwater Quality for Irrigation Purpose in a Limestone enriched Area</a> 								</span></strong>  <br>
+                                <span class="tag-class">International Review of Civil Engineering</span><br>
+                                Publication: Praise Worthy Prize<br>
+                                Author List: Hasan Sourav; AKM  Adham; <strong> Md. Touhidul  Islam</strong>; Deen  Islam; <br>                               
+                                Vol. 7, pp 5-12. 2016.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2015</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>51. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3329/jesnr.v8i2.26884  " target="_blank">Effects of Dairy Farm's Wastewater Irrigation on Wheat Production and Soil Health</a> 								</span></strong>  <br>
+                                <span class="tag-class">Journal of Environmental Science and Natural Resources</span><br>
+                                Publication: Bangladesh Society for Conservation of Environment and Natural Resources<br>
+                                Author List: MT Islam; AKM  Adham; D  Islam; <br>                               
+                                Vol. 8, pp 157-162. 2015.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">Conference Proceedings (6)</span></strong></td></tr>
+                                                          <tr><td><strong><span style="font-size:16px;">2025</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>1. <span style="font-size:16px;">
+								 <a href="https://www.iahr.org/library/infor?pid=37886" target="_blank">Examination of Sandbar Excavation in the Tidal River Sections for Expansion of Ayu Spawning Bed Area</a> 								</span></strong>  <br>
+                                <br>
+                                <br>
+                                Author List: Keisuke Yoshida; Hiroshi Yajima; Yasushi Yamashita; <strong> Md. Touhidul  Islam</strong>; Yutaro Hashimoto<br>                               
+                                Vol. , pp . 2025.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2022</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>2. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3850/IAHR-39WC252171192022989" target="_blank">Developing 3-D numerical flood flow model for vegetated rivers: A case study for lower Asahi River flooding in Japan</a> 								</span></strong>  <br>
+                                <span class="tag-class">Proceedings of the 39th IAHR World Congress; Spain, Granada</span><br>
+                                Publication: International Association for Hydro-Environment Engineering and Research&nbsp;…<br>
+                                Author List: MT Islam; K  Yoshida; Y  Kajikawa; S  Nishiyama; <br>                               
+                                Vol. , pp . 2022.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>3. <span style="font-size:16px;">
+								 <a href="https://doi.org/10.3850/IAHR-39WC252171192022987" target="_blank">Novel UAV-borne green LiDAR versus traditional airborne LiDAR: A case study to characterize hydraulic and riparian vegetation attributes</a> 								</span></strong>  <br>
+                                <span class="tag-class">Proceedings of the 39th IAHR World Congress; Spain, Granada</span><br>
+                                Publication: International Association for Hydro-Environment Engineering and Research&nbsp;…<br>
+                                Author List: MT Islam; K  Yoshida; S  Nishiyama; K  Sakai; <br>                               
+                                Vol. , pp . 2022.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2021</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>4. <span style="font-size:16px;">
+								 <a href="https://drive.google.com/file/d/1v8jkFZK-BQcEmOUYxu-cP2esfRrlrO4l/view" target="_blank">Assessing performance of a novel UAV-borne Green LiDAR on vegetated rivers characterization: comparison with traditional Airborne LiDAR Bathymetry</a> 								</span></strong>  <br>
+                                <span class="tag-class">Proceedings of the 9th International Symposium on Environmental Hydraulics; Seoul, Republic of Korea</span><br>
+                                Publication: International Association for Hydro-Environment Engineering and Research (IAHR)<br>
+                                Author List: MT Islam; K  Yoshida; S  Nishiyama; K  Sakai; <br>                               
+                                Vol. , pp . 2021.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2020</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>5. <span style="font-size:16px;">
+								 <a href="https://www.iahr.org/library/infor?pid=7492" target="_blank">Flood simulation model coupled with woody vegetation wash-out in the lower Asahi River, Japan</a> 								</span></strong>  <br>
+                                <span class="tag-class">Proceedings of the 22nd IAHR-APD Congress 2020, Sapporo, Japan</span><br>
+                                <br>
+                                Author List: Kimihisa Nagata; Keisuke  Yoshida; Shiro  Maeno; Shinya  Nigo; <strong> Md. Touhidul  Islam</strong>; <br>                               
+                                Vol. , pp . 2020.
+                               
+                               </td>
+                             </tr>
+                             
+                                                          <tr><td><strong><span style="font-size:16px;">2014</span></strong></td></tr>
+
+                             
+                                                          <tr>
+                              <td style="background:#EEEEEE;border-bottom: 1px solid black;">
+                                <strong>6. <span style="font-size:16px;">
+								 <a href="https://www.researchgate.net/publication/321081671_Irrigation_with_wastewater_in_Bangladesh_-_problems_and_prospects" target="_blank">Irrigation with wastewater in Bangladesh - problems and prospects</a> 								</span></strong>  <br>
+                                <span class="tag-class">Bangladesh National Committee of the International Commission on Irrigation and Drainage (BANCID)</span><br>
+                                <br>
+                                Author List: <strong> Md. Touhidul  Islam</strong>; A.K.M.  Adham; Atikur  Rahman; <br>                               
+                                Vol. , pp 12-13. 2014.
+                               
+                               </td>
+                             </tr>
+                             
+                                                      </tbody>
+                         <tfoot>
+                         </tfoot> 
+                         </table>
+                    </div>
+                </main>
+            </div>
+
+           
+
+       
+    </div>
+
+    <div id="research" class="section scrollspy" style="background-color: floralwhite;">
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col s12">
+                    <header class="page-header-lg">
+                        <div class="header-title-block">
+                            <h1 class="page-title">Ongoing Projects</h1>
+                        </div>
+                    </header>
+
+                    <ol>
+                        <li>
+                            <h6>Automated Real-Time Change Detection in Urban Areas</h6>
+                            <p>Developing deep learning algorithms to automatically detect urban development, building construction, and infrastructure changes using time-series Sentinel-2 and Sentinel-1 SAR imagery. The project aims to enable city planners and environmental agencies to monitor rapid urban growth in near real-time with high accuracy and minimal false positives.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="section scrollspy">
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col s12">
+                    <header class="page-header-lg">
+                        <div class="header-title-block">
+                            <h1 class="page-title">Meet the team</h1>
+                        </div>
+                    </header>
+                    <br>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Dr. Md Touhidul Islam.jpg" alt="Dr. Md Touhidul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Dr. Md Touhidul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Professor, Director</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="mailto:m.rahman@university.edu" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                    <a href="#" class="github-link">GitHub</a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="team/M. Shafiul Islam.jpg" alt="M. Shafiul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">M. Shafiul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">MS-2 Student</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Irfan Akbar.jpg" alt="Irfan Akbar" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Irfan Akbar</h6>
+                                </div>
+                                <br>
+                                <span class="h7">MS-2 Student</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Mahadi Hasan Joy.jpg" alt="Mahadi Hasan Joy" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Mahadi Hasan Joy</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2
+</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Akash.jpg" alt="Akash" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Akash</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Aminul Islam.jpg" alt="Aminul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Aminul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Musfiqus Shalehin.jpg" alt="Musfiqus Shalehin" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Musfiqus Shalehin</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Mst. Rimi Khatun.jpg" alt="Mst. Rimi Khatun" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Mst. Rimi Khatun</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Md. Arafat Rahman.jpg" alt="Md. Arafat Rahman" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Md. Arafat Rahman</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="team-section">Alumni</h5>
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Md. Arafat Rahman.jpg" alt="Md. Arafat Rahman" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Md. Arafat Rahman</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Senior Data Scientist, Tech Company</span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="https://via.placeholder.com/150" alt="Maria Garcia" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Maria Garcia</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Research Engineer, Geo-Tech Startup</span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <footer id="contact " class="page-footer scrollspy">
+        <div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#research">Ongoing Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Contact Us</h5>
+                <p>Remote Sensing Lab<br>University of Technology<br>123 Research Avenue<br>City, State 12345</p>
+                <p><a href="mailto:lab@university.edu">lab@university.edu</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <div class="social-links">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="GitHub">★</a>
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="Email">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Download Datasets</a></li>
+                    <li><a href="#">GitHub Repository</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Research Tools</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2024 Remote Sensing Lab. All rights reserved. | <a href="#" style="color: #787878;">Privacy Policy</a> | <a href="#" style="color: #787878;">Terms of Service</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('nav-mobile');
+            nav.classList.toggle('active');
+        }
+
+        function toggleCollapse(element) {
+            const nextUl = element.nextElementSibling;
+            if (nextUl && nextUl.classList.contains('icontent')) {
+                nextUl.classList.toggle('icontent-active');
+            }
+        }
+    </script>
+</body>
+</html>

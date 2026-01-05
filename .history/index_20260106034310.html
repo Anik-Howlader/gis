@@ -532,118 +532,45 @@ showMoreBtn.addEventListener("click", () => {
     </div>
 </div>
 
+<!-- Lookbook & Gallery Section -->
+<div id="lookbook" class="section scrollspy" style="background-color:#f0f4f8; padding:60px 20px;">
+    <div class="container" style="max-width:1200px; margin:auto; text-align:center;">
 
-</div>
- <section id="lookbook" class="m-media-grid c-panel--black" style="background-color: #003494;">
-        <div class="o-container-fluid c-panel--line">
-            <div class="m-media-grid__columns">
-                <div class="m-media-grid__text">
-                    <div class="o-row o-row--start">
-                        
-                        <div class="c-panel__title o-col-6 o-col-sm-10">
-                            <h2 class="m-media-grid__title title-serif--xl" id="m-media-grid-title-residential-life">
-                                Lab Lookbook & Gallery
-                            </h2>
-                            <div class="m-media-grid__subtitle">
-                                First-year lab orientations and collaborative research spaces create an innovative experience within our research community. The lab is where you collaborate, innovate—and lay the groundwork for groundbreaking discoveries.
-                            </div>
-                            <div class="m-media-grid__cta">
-                                <div class="c-button--link-wrapper c-button c-button--on-color c-button--with-icon">
-                                    <a href="#lookbook">Learn more about lab life at AgroSense
-                                        <span class="c-button__icon" aria-hidden="true">
-                                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 21 16" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m17.185 9h-17.185v-2h17.185l-5.586-5.586 1.415-1.414 7.986 7.986-.014.014.014.014-7.986 7.986-1.415-1.414z"></path>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-   
-                            
-                        </div>
-                    </div>
-                </div>
+        <header style="margin-bottom:40px;">
+            <h1 style="font-weight:700; letter-spacing:1px; color:#003494;">Lookbook & Gallery</h1>
+            <hr style="border:1px solid rgba(0,0,0,0.2); width:80px; margin:10px auto 0 auto;">
+        </header>
 
-                <ul aria-labelledby="m-media-grid-title-residential-life" class="c-teaser-list--black">
-                    <li class="m-media-grid__item">
-                        <figure class="c-media c-media--wysiwyg_inline">
-                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
-                                <img loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=533&fit=crop" width="800" height="533" alt="Team collaboration">
-                            </div>
-                        </figure>
-                    </li>
-                    <li class="m-media-grid__item">
-                        <figure class="c-media c-media--wysiwyg_inline">
-                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
-                                <img loading="lazy" src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=533&fit=crop" width="800" height="533" alt="Lab workspace">
-                            </div>
-                        </figure>
-                    </li>
-                    
-                    
-                </ul>
-            </div>
-
+        <div class="gallery-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px; align-items:center; justify-items:center;">
             
+            <!-- Image 1 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+1" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+1" alt="Gallery Image 1" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 2 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+2" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+2" alt="Gallery Image 2" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 3 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+3" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+3" alt="Gallery Image 3" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 4 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+4" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+4" alt="Gallery Image 4" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
+            <!-- Image 5 -->
+            <a href="https://via.placeholder.com/1200x800?text=Gallery+Image+5" class="lightbox">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+5" alt="Gallery Image 5" style="width:100%; height:auto; transition: transform 0.3s ease;">
+            </a>
+
         </div>
-
-        
-    </section>
-
-  
-
-    <script>
-        let current = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        const thumbs = document.querySelectorAll('.thumb');
-        const total = slides.length;
-
-        const data = [
-            { title: "Team Collaboration", tags: ["Earth Observation", "Team Science"] },
-            { title: "Research Innovation", tags: ["Machine Learning", "Innovation"] },
-            { title: "Lab Workspace", tags: ["Infrastructure", "Technology"] },
-            { title: "Development & Testing", tags: ["Testing", "Methodology"] },
-            { title: "Field Research", tags: ["Field Studies", "Data Collection"] },
-            { title: "Scientific Innovation", tags: ["Innovation", "Sustainability"] },
-            { title: "Knowledge Dissemination", tags: ["Presentation", "Communication"] },
-            { title: "Team Excellence", tags: ["Achievement", "Excellence"] }
-        ];
-
-        function show(n) {
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => d.classList.remove('active'));
-            thumbs.forEach(t => t.classList.remove('active'));
-
-            slides[n].classList.add('active');
-            dots[n].classList.add('active');
-            thumbs[n].classList.add('active');
-
-            document.getElementById('current').textContent = String(n + 1).padStart(2, '0');
-            document.getElementById('overlay-title').textContent = data[n].title;
-            document.getElementById('overlay-tag1').textContent = data[n].tags[0];
-            document.getElementById('overlay-tag2').textContent = data[n].tags[1];
-
-            current = n;
-
-            const prog = document.querySelector('.progress');
-            prog.style.animation = 'none';
-            setTimeout(() => {
-                prog.style.animation = 'progress 5s linear forwards';
-            }, 10);
-        }
-
-        function next() { show((current + 1) % total); }
-        function prev() { show((current - 1 + total) % total); }
-        function go(n) { show(n); }
-
-        document.addEventListener('keydown', e => {
-            if (e.key === 'ArrowLeft') prev();
-            if (e.key === 'ArrowRight') next();
-        });
-
-        setInterval(next, 5000);
-    </script>
+    </div>
+</div>
 
 
 

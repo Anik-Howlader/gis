@@ -558,7 +558,7 @@ showMoreBtn.addEventListener("click", () => {
                                     </a>
                                 </div>
                             </div>
-   
+
                             
                         </div>
                     </div>
@@ -579,71 +579,24 @@ showMoreBtn.addEventListener("click", () => {
                             </div>
                         </figure>
                     </li>
-                    
-                    
+                    <li class="m-media-grid__item">
+                        <figure class="c-media c-media--wysiwyg_inline">
+                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=533&fit=crop" width="800" height="533" alt="Field work">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="m-media-grid__item">
+                        <figure class="c-media c-media--wysiwyg_inline">
+                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=533&fit=crop" width="800" height="533" alt="Conference">
+                            </div>
+                        </figure>
+                    </li>
                 </ul>
             </div>
-
-            
         </div>
-
-        
     </section>
-
-  
-
-    <script>
-        let current = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        const thumbs = document.querySelectorAll('.thumb');
-        const total = slides.length;
-
-        const data = [
-            { title: "Team Collaboration", tags: ["Earth Observation", "Team Science"] },
-            { title: "Research Innovation", tags: ["Machine Learning", "Innovation"] },
-            { title: "Lab Workspace", tags: ["Infrastructure", "Technology"] },
-            { title: "Development & Testing", tags: ["Testing", "Methodology"] },
-            { title: "Field Research", tags: ["Field Studies", "Data Collection"] },
-            { title: "Scientific Innovation", tags: ["Innovation", "Sustainability"] },
-            { title: "Knowledge Dissemination", tags: ["Presentation", "Communication"] },
-            { title: "Team Excellence", tags: ["Achievement", "Excellence"] }
-        ];
-
-        function show(n) {
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => d.classList.remove('active'));
-            thumbs.forEach(t => t.classList.remove('active'));
-
-            slides[n].classList.add('active');
-            dots[n].classList.add('active');
-            thumbs[n].classList.add('active');
-
-            document.getElementById('current').textContent = String(n + 1).padStart(2, '0');
-            document.getElementById('overlay-title').textContent = data[n].title;
-            document.getElementById('overlay-tag1').textContent = data[n].tags[0];
-            document.getElementById('overlay-tag2').textContent = data[n].tags[1];
-
-            current = n;
-
-            const prog = document.querySelector('.progress');
-            prog.style.animation = 'none';
-            setTimeout(() => {
-                prog.style.animation = 'progress 5s linear forwards';
-            }, 10);
-        }
-
-        function next() { show((current + 1) % total); }
-        function prev() { show((current - 1 + total) % total); }
-        function go(n) { show(n); }
-
-        document.addEventListener('keydown', e => {
-            if (e.key === 'ArrowLeft') prev();
-            if (e.key === 'ArrowRight') next();
-        });
-
-        setInterval(next, 5000);
-    </script>
 
 
 

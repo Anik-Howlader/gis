@@ -580,17 +580,105 @@ showMoreBtn.addEventListener("click", () => {
                         </figure>
                     </li>
                     
-                    
                 </ul>
             </div>
-
-            
         </div>
-
-        
     </section>
 
-  
+    <div class="gallery-wrapper">
+        <!-- MAIN DISPLAY -->
+        <div class="display">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=2560&h=1440&fit=crop" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <video muted autoplay playsinline>
+                    <source src="https://media.w3.org/cc0-video/big_buck_bunny_480p.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=2560&h=1440&fit=crop" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <video muted autoplay playsinline>
+                    <source src="https://media.w3.org/cc0-video/big_buck_bunny_480p.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=2560&h=1440&fit=crop" alt="Slide 5">
+            </div>
+            <div class="slide">
+                <video muted autoplay playsinline>
+                    <source src="https://media.w3.org/cc0-video/big_buck_bunny_480p.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=2560&h=1440&fit=crop" alt="Slide 7">
+            </div>
+            <div class="slide">
+                <video muted autoplay playsinline>
+                    <source src="https://media.w3.org/cc0-video/big_buck_bunny_480p.webm" type="video/webm">
+                </video>
+            </div>
+
+            <!-- OVERLAY ON IMAGE -->
+            <div class="overlay">
+                <div class="overlay-label" id="overlay-label">Focus Area</div>
+                <div class="overlay-title" id="overlay-title">Team Collaboration</div>
+                <div class="overlay-tags">
+                    <span class="overlay-tag" id="overlay-tag1">Earth Observation</span>
+                    <span class="overlay-tag" id="overlay-tag2">Team Science</span>
+                </div>
+            </div>
+
+            <!-- NAVIGATION ARROWS -->
+            <button class="arrow prev" onclick="prev()">‹</button>
+            <button class="arrow next" onclick="next()">›</button>
+
+            <!-- DOTS (LEFT BOTTOM) -->
+            <div class="dots">
+                <button class="dot active" onclick="go(0)"></button>
+                <button class="dot" onclick="go(1)"></button>
+                <button class="dot" onclick="go(2)"></button>
+                <button class="dot" onclick="go(3)"></button>
+                <button class="dot" onclick="go(4)"></button>
+                <button class="dot" onclick="go(5)"></button>
+                <button class="dot" onclick="go(6)"></button>
+                <button class="dot" onclick="go(7)"></button>
+            </div>
+
+            <!-- THUMBNAILS (RIGHT BOTTOM) -->
+            <div class="thumbs">
+                <div class="thumb active" onclick="go(0)">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(1)">
+                    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(2)">
+                    <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(3)">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(4)">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129005c?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(5)">
+                    <img src="https://images.unsplash.com/photo-1516534775068-bb57d73bfa26?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(6)">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&h=150&fit=crop" alt="">
+                </div>
+                <div class="thumb" onclick="go(7)">
+                    <img src="https://images.unsplash.com/photo-1553531088-d78e0c4ceba2?w=200&h=150&fit=crop" alt="">
+                </div>
+            </div>
+
+            <!-- PROGRESS BAR -->
+            <div class="progress"></div>
+        </div>
+    </div>
 
     <script>
         let current = 0;
