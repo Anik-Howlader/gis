@@ -514,7 +514,7 @@
         /* ===== Nature-style Publications ===== */
 
 .publications-list {
-    max-width: 80vw;
+    max-width: 8;
     margin: 0 auto;
 }
 
@@ -602,7 +602,7 @@
 }
 
 #publications .publications-list {
-    max-width: 80vw;
+    max-width: 900px;
     margin: 0 auto;
 }
 
