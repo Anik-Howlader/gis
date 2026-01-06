@@ -113,7 +113,8 @@
 
         .side-nav > div {
             height: 200px;
-            padding-top: 20px;
+            pad
+            background: black;
             display: flex;
             align-items: center;
             justify-content: center;
