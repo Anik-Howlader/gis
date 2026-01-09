@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSense and Water Innovation Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a class="brand-logo" href="#"><img src="logo.png" alt="logo"></a>
+                <button class="button-collapse" onclick="toggleNav()">
+                    <div class="menuicon"></div>
+                </button>
+                <ul class="table-of-contents hide-on-menu-overflow">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#conference">Conference Papers & Presentations</a></li>
+                    <li><a href="#projects">Ongoing Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#collab">Collaborators</a></li>
+                    <li><a href="#gallery">Lab Lookbook & Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="nav-mobile" class="side-nav">
+    <div class="nav-header">
+        <img src="logo.png" alt="menu">
+    </div>
+
+    <ul>
+        <li>
+            <a href="#home" onclick="toggleNav()">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#publications" onclick="toggleNav()">
+               <i class="ai ai-google-scholar"></i>
+               <span>Publications</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#conference" onclick="toggleNav()">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Conference Papers</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#projects" onclick="toggleNav()">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Ongoing Projects</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#team" onclick="toggleNav()">
+                <i class="fa-solid fa-users"></i>
+                <span>Team</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#collab" onclick="toggleNav()">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Collaborators</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#gallery" onclick="toggleNav()">
+                <i class="fa-solid fa-image"></i>
+                <span>Lab Lookbook & Gallery</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact" onclick="toggleNav()">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    <div id="home" class="scrollspy">
+        <video autoplay muted loop playsinline
+       style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:0;">
+        <source src="background.mp4" type="video/mp4">
+        </video>
+
+        <div class="no-pad-bot" style="padding: 60px 20px; text-align: center; margin-bottom: 40px;">
+            <div class="header container center">
+                <img class="header-logo" src="logo.png" alt="Lab Logo" style="margin-bottom: 30px;height: 180px;width: 210px;">
+                <div class="center no-pad-bot no-pad-top">
+                    <h2 style="color: white; margin-bottom: 20px;">Welcome<br><br>AgroSense and Water Innovation Lab</h2>
+                    <p class="white-text light" style="font-size: 16px; max-width: 800px;">
+                        We are a group of researchers focusing on tackling problems on earth observation and geospatial analysis, 
+                        specifically land use classification, change detection, environmental monitoring, crop yield prediction, and deep learning for satellite imagery analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; overflow: hidden; padding: 0;">
+            <div class="no-pad-bot" style="flex: 1; padding: 40px 20px; animation: slideInLeft 1s ease-out;">
+                <div class="center">
+                    <h2 style="color: white; text-align: left; margin-bottom: 20px;">Ongoing Projects</h2>
+                    <div style="text-align: left; max-width: 500px;">
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Automated Change Detection</h6>
+                            <p class="white-text light" style="font-size: 14px;">Detecting urban development and infrastructure changes using Sentinel-2 and SAR imagery.</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Climate-Driven LULC Mapping</h6>
+                            <p class="white-text light" style="font-size: 14px;">Integrating climate data with remote sensing for land use prediction.</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <h6 style="color: #03a9f4;">Disaster Assessment System</h6>
+                            <p class="white-text light" style="font-size: 14px;">Real-time damage assessment for floods, earthquakes, and wildfires.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1; padding: 40px 20px; animation: slideInRight 1s ease-out;">
+                <div class="center">
+                    <h2 style="color: white; text-align: right; margin-bottom: 20px;">Recent Publications</h2>
+                    <div style="text-align: left; max-width: 500px;">
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2024</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Advanced Multi-Temporal Classification Using Vision Transformers - IEEE TGRS</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2024</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Real-Time Change Detection in Urban Areas - Remote Sensing of Environment</p>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <p style="color: #03a9f4; font-weight: 600; margin: 0 0 5px 0; font-size: 14px;">2023</p>
+                            <p class="white-text light" style="font-size: 13px; margin: 0;">Crop Yield Prediction using Temporal CNNs - IEEE JSTARS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #home {
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+  <div id="publications" class="section scrollspy">
+    <header class="page-header-lg">
+        <h1 class="page-title">Publications</h1>
+    </header>
+
+    <div class="publications-list">
+
+        
+     <!-- Show More Button -->
+    <button id="show-more-btn" style="margin-top: 20px; background-color:#9fc3ff; color:#003494; border:none; padding:10px 20px; cursor:pointer; font-weight:bold;">
+        Show More
+    </button>
+
+    </div>
+</div>
+
+<script>
+const pubList = document.querySelectorAll(".publications-list .publication");
+const showMoreBtn = document.getElementById("show-more-btn");
+let visibleCount = 3; // initially visible
+const increment = 3;    // show 3 more per click
+
+// Hide publications after the initial visibleCount
+pubList.forEach((pub, index) => {
+    if(index >= visibleCount) {
+        pub.style.display = "none";
+    }
+});
+
+showMoreBtn.addEventListener("click", () => {
+    // show next batch of publications
+    let nextCount = visibleCount + increment;
+    pubList.forEach((pub, index) => {
+        if(index < nextCount) {
+            pub.style.display = "block";
+        }
+    });
+
+    visibleCount = nextCount;
+
+    // hide button if all publications are visible
+    if(visibleCount >= pubList.length) {
+        showMoreBtn.style.display = "none";
+    }
+});
+</script>
+
+
+
+
+
+
+    <div id="research" class="section scrollspy" style="background-color: floralwhite;">
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col s12">
+                    <header class="page-header-lg">
+                        <div class="header-title-block">
+                            <h1 class="page-title">Ongoing Projects</h1>
+                        </div>
+                    </header>
+
+                    <ol>
+                        <li>
+                            <h6>Automated Real-Time Change Detection in Urban Areas</h6>
+                            <p>Developing deep learning algorithms to automatically detect urban development, building construction, and infrastructure changes using time-series Sentinel-2 and Sentinel-1 SAR imagery. The project aims to enable city planners and environmental agencies to monitor rapid urban growth in near real-time with high accuracy and minimal false positives.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="section scrollspy">
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col s12">
+                    <header class="page-header-lg">
+                        <div class="header-title-block">
+                            <h1 class="page-title">Meet the team</h1>
+                        </div>
+                    </header>
+                    <br>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Dr. Md Touhidul Islam.jpg" alt="Dr. Md Touhidul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Dr. Md Touhidul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Professor, Director</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="mailto:m.rahman@university.edu" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                    <a href="#" class="github-link">GitHub</a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="team/M. Shafiul Islam.jpg" alt="M. Shafiul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">M. Shafiul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">MS-2 Student</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Irfan Akbar.jpg" alt="Irfan Akbar" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Irfan Akbar</h6>
+                                </div>
+                                <br>
+                                <span class="h7">MS-2 Student</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Mahadi Hasan Joy.jpg" alt="Mahadi Hasan Joy" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Mahadi Hasan Joy</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2
+</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Akash.jpg" alt="Akash" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Akash</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Aminul Islam.jpg" alt="Aminul Islam" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Aminul Islam</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Musfiqus Shalehin.jpg" alt="Musfiqus Shalehin" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Musfiqus Shalehin</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Mst. Rimi Khatun.jpg" alt="Mst. Rimi Khatun" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Mst. Rimi Khatun</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="center">
+                                <img src="Team/Md. Arafat Rahman.jpg" alt="Md. Arafat Rahman" class="teamMemberPhoto">
+                                <div class="margin-top-half">
+                                    <h6 class="margin-top-small teamMemberName">Md. Arafat Rahman</h6>
+                                </div>
+                                <br>
+                                <span class="h7">Level-4, Semester-2</span>
+                                <br><br>
+                                <span class="h7">
+                                    <a href="#" class="mail-link">✉</a>
+                                    <a href="#"><i class="ai ai-google-scholar"></i></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Collaborators Section -->
+<div id="collaborators" class="section scrollspy" style="background-color:#fffaf0; padding:60px 20px;">
+    <div class="container" style="max-width:1000px; margin:auto; text-align:center;">
+        <header style="margin-bottom:40px;">
+            <h1 style="font-weight:700; letter-spacing:1px; color:#003494;">Collaborators</h1>
+            <hr style="border:1px solid rgba(0,0,0,0.2); width:80px; margin:10px auto 0 auto;">
+        </header>
+
+        <div class="collaborators-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:30px; align-items:center; justify-items:center;">
+            
+            <!-- NASA Logo -->
+            <a href="https://www.nasa.gov" target="_blank" title="NASA">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" alt="NASA" style="max-width:100px; transition: transform 0.3s ease;"></a>
+            
+            <!-- JPL Logo -->
+            <a href="https://www.jpl.nasa.gov" target="_blank" title="Jet Propulsion Laboratory">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Bangladesh_Agriculture_University_logo.svg/500px-Bangladesh_Agriculture_University_logo.svg.png" alt="JPL" style="max-width:100px; transition: transform 0.3s ease;"></a>
+
+            <!-- ESA Logo (example) -->
+            <a href="https://www.esa.int" target="_blank" title="European Space Agency">
+                <img src="https://via.placeholder.com/150?text=ESA" alt="ESA" style="max-width:100px; transition: transform 0.3s ease;"></a>
+
+            <!-- JAXA Logo (example) -->
+            <a href="https://global.jaxa.jp" target="_blank" title="JAXA">
+                <img src="https://via.placeholder.com/150?text=JAXA" alt="JAXA" style="max-width:100px; transition: transform 0.3s ease;"></a>
+
+            <!-- Example University / Institution -->
+            <a href="https://www.mit.edu" target="_blank" title="MIT">
+                <img src="https://via.placeholder.com/150?text=MIT" alt="MIT" style="max-width:100px; transition: transform 0.3s ease;"></a>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+ <section id="lookbook" class="m-media-grid c-panel--black" style="background-color: #003494;">
+        <div class="o-container-fluid c-panel--line">
+            <div class="m-media-grid__columns">
+                <div class="m-media-grid__text">
+                    <div class="o-row o-row--start">
+                        
+                        <div class="c-panel__title o-col-6 o-col-sm-10">
+                            <h2 class="m-media-grid__title title-serif--xl" id="m-media-grid-title-residential-life">
+                                Lab Lookbook & Gallery
+                            </h2>
+                            <div class="m-media-grid__subtitle">
+                                First-year lab orientations and collaborative research spaces create an innovative experience within our research community. The lab is where you collaborate, innovate—and lay the groundwork for groundbreaking discoveries.
+                            </div>
+                            <div class="m-media-grid__cta">
+                                <div class="c-button--link-wrapper c-button c-button--on-color c-button--with-icon">
+                                    <a href="#lookbook">Learn more about lab life at AgroSense
+                                        <span class="c-button__icon" aria-hidden="true">
+                                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 21 16" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m17.185 9h-17.185v-2h17.185l-5.586-5.586 1.415-1.414 7.986 7.986-.014.014.014.014-7.986 7.986-1.415-1.414z"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+   
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <ul aria-labelledby="m-media-grid-title-residential-life" class="c-teaser-list--black">
+                    <li class="m-media-grid__item">
+                        <figure class="c-media c-media--wysiwyg_inline">
+                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=533&fit=crop" width="800" height="533" alt="Team collaboration">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="m-media-grid__item">
+                        <figure class="c-media c-media--wysiwyg_inline">
+                            <div class="c-media__media c-panel-contained--mg-left c-panel-contained--mg-right">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=533&fit=crop" width="800" height="533" alt="Lab workspace">
+                            </div>
+                        </figure>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+  
+
+    <script>
+        let current = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const thumbs = document.querySelectorAll('.thumb');
+        const total = slides.length;
+
+        const data = [
+            { title: "Team Collaboration", tags: ["Earth Observation", "Team Science"] },
+            { title: "Research Innovation", tags: ["Machine Learning", "Innovation"] },
+            { title: "Lab Workspace", tags: ["Infrastructure", "Technology"] },
+            { title: "Development & Testing", tags: ["Testing", "Methodology"] },
+            { title: "Field Research", tags: ["Field Studies", "Data Collection"] },
+            { title: "Scientific Innovation", tags: ["Innovation", "Sustainability"] },
+            { title: "Knowledge Dissemination", tags: ["Presentation", "Communication"] },
+            { title: "Team Excellence", tags: ["Achievement", "Excellence"] }
+        ];
+
+        function show(n) {
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            thumbs.forEach(t => t.classList.remove('active'));
+
+            slides[n].classList.add('active');
+            dots[n].classList.add('active');
+            thumbs[n].classList.add('active');
+
+            document.getElementById('current').textContent = String(n + 1).padStart(2, '0');
+            document.getElementById('overlay-title').textContent = data[n].title;
+            document.getElementById('overlay-tag1').textContent = data[n].tags[0];
+            document.getElementById('overlay-tag2').textContent = data[n].tags[1];
+
+            current = n;
+
+            const prog = document.querySelector('.progress');
+            prog.style.animation = 'none';
+            setTimeout(() => {
+                prog.style.animation = 'progress 5s linear forwards';
+            }, 10);
+        }
+
+        function next() { show((current + 1) % total); }
+        function prev() { show((current - 1 + total) % total); }
+        function go(n) { show(n); }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowLeft') prev();
+            if (e.key === 'ArrowRight') next();
+        });
+
+        setInterval(next, 5000);
+    </script>
+
+
+
+ 
+    <footer id="contact " class="page-footer scrollspy">
+        <div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#research">Ongoing Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Contact Us</h5>
+                <p>Remote Sensing Lab<br>University of Technology<br>123 Research Avenue<br>City, State 12345</p>
+                <p><a href="mailto:lab@university.edu">lab@university.edu</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <div class="social-links">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="GitHub">★</a>
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="Email">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Download Datasets</a></li>
+                    <li><a href="#">GitHub Repository</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Research Tools</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2024 Remote Sensing Lab. All rights reserved. | <a href="#" style="color: #787878;">Privacy Policy</a> | <a href="#" style="color: #787878;">Terms of Service</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('nav-mobile');
+            nav.classList.toggle('active');
+        }
+
+        function toggleCollapse(element) {
+            const nextUl = element.nextElementSibling;
+            if (nextUl && nextUl.classList.contains('icontent')) {
+                nextUl.classList.toggle('icontent-active');
+            }
+        }
+    </script>
+</body>
+</html>
